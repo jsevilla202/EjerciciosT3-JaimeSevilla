@@ -12,7 +12,7 @@ public class Ejercicio1 {
 		 * seg: Segundos introducidos por el usuario
 		 * plus: Segundos para incrementar introducidos por el usuario
 		 */
-		int hora, min, seg, plus;
+		int hora, min, seg, plus, dia = 0;
 		
 		//Creamos el scanner y lo nombramos "sc"
 		Scanner sc = new Scanner(System.in);
@@ -38,8 +38,8 @@ public class Ejercicio1 {
 		System.out.print("Inserte los segundos que desea incrementar, por favor: ");
 		plus = sc.nextInt();
 		
-		//Comprobamos que los valores introducidos sean positivos
-		if(hora>=0||min>=0||seg>=0||plus>=0) {
+		//Comprobamos que los valores introducidos sean positivos y dentro de los rangos horarios
+		if((hora>=0&&hora<=24)&&(min>=0&&min<=59)&&(seg>=0&&seg<=59)&&plus>=0) {
 		//Sumamos los segundos de incremento a los segundos introducidos por el usuario
 		seg = seg + plus;
 		

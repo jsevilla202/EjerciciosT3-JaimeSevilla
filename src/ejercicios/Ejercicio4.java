@@ -8,10 +8,10 @@ public class Ejercicio4 {
 		 * Nombramos las variables como numeros enteros:
 		 * a: Número introducido por el usuario
 		 * b: Número introducido por el usuario
-		 * mayor: Número mayor entre las variables "a" y "b"
-		 * menor: Número menor entre las variables "a" y "b"
+		 * nmayor: Número mayor entre las variables "a" y "b"
+		 * nmenor: Número menor entre las variables "a" y "b"
 		 */
-		int a, b, mayor = 0, menor = 0;
+		int a, b, nmayor = 0, nmenor = 0, mayor;
 		
 		//Creamos un scanner y lo nombramos "sc"
 		Scanner sc = new Scanner(System.in);
@@ -27,26 +27,36 @@ public class Ejercicio4 {
 		//Capturamos la respuesta en la variable "b"
 		b = sc.nextInt();
 		
-		
+		//Si tanto la variable "a" como "b" son positivas, continuamos con el programa
 		if(a>=0&&b>=0) {
+			/*
+			 * Comprobamos si:
+			 * b es mayor que a
+			 * a es mayor que b
+			 * a y b son iguales
+			 * 
+			 * Para igualar las variables "nmayor" y "nmenor" a cada una
+			 */
 		if(a<b) {
-			mayor = b;
-			menor = a;
+			nmayor = b;
+			nmenor = a;
 		}
 		else if(a==b) {
 			System.out.println("Los números son iguales por lo que el máximo común divisor es "+ a);
 		}
 		else {
-			mayor = a;
-			menor = b;
+			nmayor = a;
+			nmenor = b;
 		}
-		for(int i = mayor; i>=menor; i--) {
+		for(int i = nmayor; i>=nmenor; i--) {
 			if(a%i==0&&b%i==0) {
-				System.out.println("El máximo común divisor de ambos es "+ i);
+				mayor = i;
+				System.out.println("El máximo común divisor de ambos es "+ mayor);
 				break;
 			}
 		}
 		}
+		//Si no, enviamos un mensaje de error
 		else {
 			System.out.println("ERROR: Un valor introducido es negativo");
 		}

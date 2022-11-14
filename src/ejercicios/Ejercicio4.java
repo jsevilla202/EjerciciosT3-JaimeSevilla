@@ -11,7 +11,7 @@ public class Ejercicio4 {
 		 * nmayor: Número mayor entre las variables "a" y "b"
 		 * nmenor: Número menor entre las variables "a" y "b"
 		 */
-		int a, b, nmayor = 0, nmenor = 0, mayor;
+		int a, b, nmayor = 0, nmenor = 0, mayor = 0;
 		
 		//Creamos un scanner y lo nombramos "sc"
 		Scanner sc = new Scanner(System.in);
@@ -48,18 +48,30 @@ public class Ejercicio4 {
 			nmayor = a;
 			nmenor = b;
 		}
+		/*
+		 * En el bucle "for":
+		 * - Inicializamos la variable "i" a la variable "nmayor" y la nombramos como número entero
+		 * - No se parará hasta llegar a "nmenor"
+		 * - Resta 1 a la variable "i" cada vuelta
+		 */
 		for(int i = nmayor; i>=nmenor; i--) {
+			//Si tanto el primer número como el segundo dan resto igual a 0 en una división entre "i", ese será el máximo común divisor y lo mostramos
 			if(a%i==0&&b%i==0) {
 				mayor = i;
 				System.out.println("El máximo común divisor de ambos es "+ mayor);
 				break;
 			}
 		}
+		//Si la variable "mayor" sigue con sun valor por defecto significa que no había máximo común divisor de esos números
+		if(mayor==0) {
+			System.out.println("No hay máximo común divisor de los números introducidos");
+		}
 		}
 		//Si no, enviamos un mensaje de error
 		else {
 			System.out.println("ERROR: Un valor introducido es negativo");
 		}
+		//Cerramos el scanner
 		sc.close();
 	}
 

@@ -32,12 +32,15 @@ public class Ejercicio2 {
 		if(n>1) {
 			//Usamos "while" para que se repita hasta que el contador "k" llegue a "n"
 		while(k<=n) {
-			//Nombramos a primo como falso, por que si no se hace dentro de este búcle no funciona correctamente
+			//Nombramos a primo como true, por que si no se hace dentro de este búcle, no funciona correctamente
 			primo = true;
 			/*
 			 * En el bucle "for":
-			 * - Inicializamos la variable "i" a 2
-			 * - No se parará hasta que la variable "k" sea mayor o igual a la variable "i"
+			 * - Inicializamos la variable "i" a 2 ya que 0 y 1 no los contamos
+			 * - Nos sirve para quitarlos los números múltiplos de 2 y 3:
+			 * 		Cuando "k" sea igual a 4, se cumplirá la condición, entrará dentro del "if" y será marcado como noprimo
+			 * 		Es decir, sirve para quitar los números pares a partir del 2 y 3
+			 * 		En el caso del 9, se cumple la condición, pero de primeras no entra en el "if" debido a que 9%2!=0, por eso a "i" se le suma 1 y ya se cumple la condición del "if"
 			 * - Suma 1 a la variable "i" cada vuelta
 			 */
 			for(int i = 2; i <= k/2; i++) {

@@ -17,7 +17,7 @@ public class Ejercicio4 {
 		Scanner sc = new Scanner(System.in);
 		
 		//Presentamos el programa al usuario y lo que se le va a pedir
-		System.out.println("A continuación se le va a pedir dos números y el programa va a buscar el máximo común múltiplo de ambos");
+		System.out.println("A continuación se le va a pedir dos números y el programa va a buscar el máximo común divisor de ambos");
 		//Pedimos al usuario un número
 		System.out.print("Introduzca el primer número: ");
 		//Capturamos la respuesta en la variable "a"

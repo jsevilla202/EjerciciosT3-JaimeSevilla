@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class Ejercicio8 {
 	public static void main(String[] args) {
+		/*
+		 * Nombramos las variables como numeros enteros:
+		 * n: Número introducido por el usuario. Se inicializa a 1
+		 * anterior: Anterior valor de n. Se inicializa a 1
+		 * i: Contador de fallos
+		 * j: Contador de números introducidos
+		 */
 		int n = 1, anterior = 1, i, j; 
 		
 		//Creamos el scanner y lo nombramos "sc"

@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
+		/*
+		 * Nombramos las variables como numeros enteros:
+		 * n: Número introducido por el usuario
+		 */
 		int n;
 		
 		//Creamos un scanner y lo nombramos "sc"

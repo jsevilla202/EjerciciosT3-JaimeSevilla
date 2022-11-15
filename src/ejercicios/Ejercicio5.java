@@ -54,7 +54,7 @@ public class Ejercicio5 {
 		 */
 		for(int i = nmayor; i>=nmenor; i++) {
 			//Si al dividir "i" entre "nmayor" da "nmenor" y viceversa, ese será el primer mínimo común múltiplo
-			if(i/nmayor==nmenor&&i/nmenor==nmayor) {
+			if(i%nmayor==0&&i%nmenor==0) {
 			mayor = i;
 			System.out.println("El mínimo común múltiplo de ambos es "+ mayor);
 			break;

@@ -54,17 +54,13 @@ public class Ejercicio4 {
 		 * - No se parará hasta llegar a "nmenor"
 		 * - Resta 1 a la variable "i" cada vuelta
 		 */
-		for(int i = nmayor; i>=nmenor; i--) {
+		for(int i = nmenor; i>=1; i--) {
 			//Si tanto el primer número como el segundo dan resto igual a 0 en una división entre "i", ese será el máximo común divisor y lo mostramos
 			if(a%i==0&&b%i==0) {
 				mayor = i;
 				System.out.println("El máximo común divisor de ambos es "+ mayor);
 				break;
 			}
-		}
-		//Si la variable "mayor" sigue con sun valor por defecto significa que no había máximo común divisor de esos números
-		if(mayor==0) {
-			System.out.println("No hay máximo común divisor de los números introducidos");
 		}
 		}
 		//Si no, enviamos un mensaje de error

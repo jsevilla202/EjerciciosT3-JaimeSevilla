@@ -1,5 +1,14 @@
 package ejercicios;
 
+/*
+ * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
+ * 12/6 : 6 : 6
+ * 13/11 : 1 : 1
+ * -1/2 : ERROR : ERROR
+ * 2/-1 : ERROR : ERROR
+ * 12/12 : 12 : 12
+ */
+
 import java.util.Scanner;
 
 public class Ejercicio4 {

@@ -1,5 +1,11 @@
 package ejercicios;
 
+/*
+ * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
+ * 
+ * 
+ */
+
 import java.util.Scanner;
 
 public class Ejercicio8 {

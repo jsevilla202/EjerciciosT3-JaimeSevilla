@@ -1,5 +1,13 @@
 package ejercicios;
 
+/*
+ * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
+ * 4 : 4444 : 4444
+ * 3 : 333 : 333
+ * 0 : ERROR : ERROR
+ * -1 : ERROR : ERROR
+ */
+
 import java.util.Scanner;
 
 public class Ejercicio6 {
@@ -37,12 +45,12 @@ public class Ejercicio6 {
 				System.out.print(i);
 			}
 			//Salto de línea después de cada número
-			System.out.println("");
+			System.out.println();
 		}
 		}
 		//Si no está dentro del rango muestra un mensaje de error
 		else {
-			System.out.println("ERROR:El valor introducido no está en el rango");
+			System.out.println("ERROR: El valor introducido no está en el rango");
 		}
 		//Cerramos el scanner
 		sc.close();

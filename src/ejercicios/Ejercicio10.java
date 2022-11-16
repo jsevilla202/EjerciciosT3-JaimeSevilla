@@ -1,11 +1,24 @@
 package ejercicios;
 
+/*
+ * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
+ * 
+ * 
+ */
+
 import java.util.Scanner;
 
 public class Ejercicio10 {
 
 	public static void main(String[] args) {
-		int n1, inverso = 0, cifra, n2 = 0;
+		/*
+		 * Nombramos las variables como numeros enteros:
+		 * n1: Número introducido por el usuario
+		 * n2: Número auxiliar para modificar "n1" sin problemas
+		 * inverso: Número inverso a "n1"
+		 * cifra: Última cífra de "n1"
+		 */
+		int n1, inverso = 0, cifra, n2;
 		
 		//Creamos el scanner y lo nombramos "sc"
 		Scanner sc = new Scanner(System.in);
@@ -18,7 +31,7 @@ public class Ejercicio10 {
 		n1 = sc.nextInt();
 		
 		//Igualamos n1 a n2 para poder manipular el número sin modificarlo
-		n1 = n2;
+		n2 = n1;
 		
 		//No parará hasta que n2 sea 0
 		while(n2!=0) {

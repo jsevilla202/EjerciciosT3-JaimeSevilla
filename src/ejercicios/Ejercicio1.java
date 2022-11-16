@@ -1,5 +1,16 @@
 package ejercicios;
 
+/*
+ * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
+ * 10/10/0/3600 : 11/10/0 : 11/10/0
+ * -1/10/10/10 : ERROR : ERROR
+ * 10/-1/10/10 : ERROR : ERROR
+ * 10/10/-1/10 : ERROR : ERROR
+ * 10/10/10/-1 : ERROR : ERROR
+ * 23/59/59/1 : 0/0/0 : 0/0/0
+ * 
+ */
+
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -12,7 +23,7 @@ public class Ejercicio1 {
 		 * seg: Segundos introducidos por el usuario
 		 * plus: Segundos para incrementar introducidos por el usuario
 		 */
-		int hora, min, seg, plus, dia = 0;
+		int hora, min, seg, plus;
 		
 		//Creamos el scanner y lo nombramos "sc"
 		Scanner sc = new Scanner(System.in);

@@ -1,5 +1,12 @@
 package ejercicios;
 
+/*
+ * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
+ * 3 : 12321 : 12321
+ * 0 : ERROR : ERROR
+ * -1 : ERROR : ERROR
+ */
+
 import java.util.Scanner;
 
 public class Ejercicio7 {
@@ -21,6 +28,7 @@ public class Ejercicio7 {
 		//Capturamos la respuesta y la guardamos en la variable "n"
 		n = sc.nextInt();
 		
+		if(n>0) {
 		/*
 		 * En el bucle "for":
 		 * - Inicializamos la variable "i" a 1
@@ -49,6 +57,12 @@ public class Ejercicio7 {
 			}
 			//Muestra un salto de línea
 			System.out.println("");
+		}
+		
+		}
+		
+		else {
+			System.out.println(n==0?"ERROR: No se mostrará nada al ser 0":"ERROR: No se admiten valores negativos");
 		}
 		//Cerramos el scanner
 		sc.close();

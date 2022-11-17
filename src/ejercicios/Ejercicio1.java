@@ -84,13 +84,14 @@ public class Ejercicio1 {
 		
 		//Mostramos el resultado por consola
 		System.out.println("La hora es: "+ hora + ":"+min+":"+seg);
-		//cerramos el scanner
-		sc.close();
 		}
 		//Si alguno no lo es, mostramos un mensaje de error
 		else {
 			System.out.println("ERROR: Uno de los valores introducidos no es válido. El tiempo no puede ser negativo");
 		}
+		
+		//cerramos el scanner
+		sc.close();
 	}
 
 }

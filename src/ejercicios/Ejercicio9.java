@@ -2,8 +2,10 @@ package ejercicios;
 
 /*
  * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
- * 
- * 
+ * 155 : 3 dígitos : 3 dígitos
+ * 2555 : 4 dígitos : 4 dígitos
+ * 684684 : 6 dígitos : 6 dígitos
+ * -1 : ERROR : ERROR
  */
 
 import java.util.Scanner;
@@ -32,7 +34,7 @@ public class Ejercicio9 {
 			n = sc.nextInt();
 			
 			//Si el número no es 0
-			if(n!=0) {
+			if(n!=0&&n>0) {
 				/*
 				 * En el bucle "for":
 				 * - Inicializamos la variable "i" a 1
@@ -41,10 +43,14 @@ public class Ejercicio9 {
 				 * - Suma 1 a la variable "j" cada vuelta
 				 * - Multiplica i por 10 para añadir 1 dígito
 				 */
-			for(i = 1, j = 0; n%i==0;j++, i*=10) {
+			for(i = 1, j = 0; i<=n;j++, i*=10) {
 			}
 			//Mostramos el resultado
 			System.out.println("El número tiene "+j+" dígitos");
+			}
+			
+			else if(n<0) {
+				System.out.println("ERROR: No se admiten números negativos");
 			}
 		}
 		//No parará hasta que el número introducido sea 0

@@ -2,8 +2,11 @@ package ejercicios;
 
 /*
  * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
- * 
- * 
+ * 121 : Es capicua : Es capicua
+ * 111 : Es capicua : Es capicua
+ * 0 : Es capicua : Es capicua
+ * -1 : Es capicua : Es capicua
+ * 12 : No es capcua : No es capicua
  */
 
 import java.util.Scanner;

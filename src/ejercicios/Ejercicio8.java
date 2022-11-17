@@ -2,8 +2,10 @@ package ejercicios;
 
 /*
  * Pruebas (valor/es introducidos) : (valor esperado) : (respuestas)
- * 
- * 
+ * 10/15/0 : 2/0 : 2/0
+ * 10/10/5/0 : 3/1 : 3/1
+ * -1 : ERROR : ERROR
+ * 10/-1/0 : 2/1 : 2/1
  */
 
 import java.util.Scanner;
@@ -65,7 +67,7 @@ public class Ejercicio8 {
 			}
 		}
 		//Mostramos los resultados
-		System.out.println("Total de números introducidos: "+ j);
+		System.out.println("Total de números introducidos: "+ (j+1));
 		System.out.println("Números fallados: "+ i);
 		}
 		//Si el número es negativo o 0
